@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import ImgRestaurante from "./assets/hashtaurante.webp";
 import Cards from "./components/Cards";
 import Navegacao from "./components/Navegacao";

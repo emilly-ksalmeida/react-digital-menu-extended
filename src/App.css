@@ -49,6 +49,28 @@ img {
   max-width: 1200px;
 }
 
+.cabecalho{
+  display: grid;
+  font-size: 21px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  border-radius: 8px;
+  background-color: #080023;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.cabecalho__botao{
+  font-size: 21px;
+  border-radius: 8px;
+  background-color: #2b01b4;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
 .categorias {
   display: grid;
   font-size: 21px;
@@ -68,7 +90,7 @@ img {
 .categoria:hover,
 .categoria--selecionada {
   transition: background-color ease 200ms;
-  background-color: #170063;
+  background-color: #26019f;
 }
 
 .cards {
