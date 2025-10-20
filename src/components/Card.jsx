@@ -1,7 +1,10 @@
 import { useForm } from "react-hook-form";
+import { useContext } from "react";
+import Context from "../context/Context.js";
 
 const Card = (props) => {
   const { register, handleSubmit, reset } = useForm();
+  const [itens, setItens] = useContext(Context);
 
   function adicionar(qtdeItem) {
     let numQtdeItem = Number(qtdeItem.qtde);
@@ -10,7 +13,7 @@ const Card = (props) => {
       quantidade: numQtdeItem,
       precoUnitario: props.preco,
     };
-    //Guardar a informação do pedido
+    setItens(anterior=> [...anterior, novaCompra]);
     reset();
   }
 
