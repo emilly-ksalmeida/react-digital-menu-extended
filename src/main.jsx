@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./App.css";
 import App from "./App.jsx";
 import Pedido from "./pages/Pedido.jsx";
 import PedidosContext from "./context/PedidosContext.jsx";

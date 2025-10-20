@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import Context from "../contexts/Context.js";
+import Context from "../context/Context.js";
 
 const formatarParaBRL = (valor) => {
   return new Intl.NumberFormat("pt-BR", {

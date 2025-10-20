@@ -20,7 +20,7 @@ function Pedido() {
        <p>Veja seus itens selecionados.</p>
        <div>
         {itens.length == 0 ? (
-          <p>Sacola vazia</p>
+          <p>Sua lista de pedidos está vazia!</p>
         ) : (
           <CardsPedidos />
         )}
