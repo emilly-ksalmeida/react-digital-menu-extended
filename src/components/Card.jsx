@@ -2,9 +2,18 @@ import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import Context from "../context/Context.js";
 
+const formatarParaBRL = (valor) => {
+  return new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(valor);
+};
+
 const Card = (props) => {
   const { register, handleSubmit, reset } = useForm();
   const [itens, setItens] = useContext(Context);
+
+  const precoFormatado = formatarParaBRL(props.preco);
 
   function adicionar(qtdeItem) {
     let numQtdeItem = Number(qtdeItem.qtde);
@@ -13,7 +22,7 @@ const Card = (props) => {
       quantidade: numQtdeItem,
       precoUnitario: props.preco,
     };
-    setItens(anterior=> [...anterior, novaCompra]);
+    setItens((anterior) => [...anterior, novaCompra]);
     reset();
   }
 
@@ -23,7 +32,7 @@ const Card = (props) => {
         <div className="card__textos">
           <h2 className="card__titulo">{props.titulo}</h2>
           <p>{props.descricao}</p>
-          <p className="card__preco">{props.preco}</p>
+          <p className="card__preco">{precoFormatado}</p>
         </div>
         <div className="card__img">
           <img src={props.imagem} alt={props.descricao} />

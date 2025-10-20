@@ -1,6 +1,13 @@
 import { useContext } from "react";
 import Context from "../contexts/Context.js";
 
+const formatarParaBRL = (valor) => {
+  return new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(valor);
+};
+
 function CardsPedidos() {
   const [itens, setItens] = useContext(Context);
 
@@ -9,7 +16,7 @@ function CardsPedidos() {
     itens.forEach((item) => {
       total = total + (item.quantidade * item.precoUnitario);
     });
-    return total;
+    return formatarParaBRL(total);
   };
 
   return (
@@ -19,9 +26,9 @@ function CardsPedidos() {
           <div>
             <h3>{item.produto}</h3>
             <p>Quantidade: {item.quantidade}</p>
-            <p>Preço unitário: {item.precoUnitario}</p>
+            <p>Preço unitário: {formatarParaBRL(item.precoUnitario)}</p>
             <p>
-              Total: {item.quantidade * item.precoUnitario}
+              Total: {formatarParaBRL(item.quantidade * item.precoUnitario)}
             </p>
           </div>
         ))}
