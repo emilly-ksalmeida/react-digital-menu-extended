@@ -7,7 +7,6 @@ function App() {
   const [categoriaSelecionada, setCategoriaSelecionada] = useState(0);
 
   return (
-    <>
       <div className="container">
         <div className="banner">
           <img src={ImgRestaurante} alt="Imagem do Hashtaurante" />
@@ -20,7 +19,6 @@ function App() {
 
         <Cards categoriaSelecionada={categoriaSelecionada} />
       </div>
-    </>
   );
 }
 

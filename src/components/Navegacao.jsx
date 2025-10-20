@@ -1,12 +1,10 @@
-import React from "react";
-
 const Navegacao = ({ setCategoriaSelecionada, categoriaSelecionada }) => {
-  const categorias = ["Pratos Principais", "Sobremesas", "Bebidas"];
-  console.log(categoriaSelecionada);
+  const categoriasMenu = ["Pratos Principais", "Sobremesas", "Bebidas"];
+  
 
   return (
     <div className="categorias">
-      {categorias.map((categoria, index) => (
+      {categoriasMenu.map((categoria, index) => (
         <p
           onClick={() => setCategoriaSelecionada(index)}
           key={index}
