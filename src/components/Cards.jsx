@@ -1,14 +1,19 @@
-import React from "react";
 import Card from "./Card";
 import { pratosPrincipais, sobremesas, bebidas } from "../assets/cardapio.js";
 
 const Cards = ({ categoriaSelecionada }) => {
-  const itensCategoria = [pratosPrincipais, sobremesas, bebidas];
-
+  const itensCategorias = [pratosPrincipais, sobremesas, bebidas];
+  const pratos = itensCategorias[categoriaSelecionada];
   return (
     <div className="cards">
-      {itensCategoria[categoriaSelecionada].map((itemCategoria, index) => (
-        <Card key={index} itemCategoria={itemCategoria} />
+      {pratos.map((prato) => (
+        <Card
+          key={prato.id}
+          titulo={prato.nome}
+          descricao={prato.descricao}
+          preco={prato.preco}
+          imagem={prato.imagem}
+        />
       ))}
     </div>
   );

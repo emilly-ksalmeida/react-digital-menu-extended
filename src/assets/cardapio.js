@@ -15,98 +15,111 @@ import guaranaImg from "./bebidas/guarana.jpeg";
 import heinekenImg from "./bebidas/heineken.jpeg";
 
 const enroladinhoMignon = {
+  id: 1,
   nome: "Enroladinho de Mignon",
-  preco: "R$ 64,90",
+  preco: 64.90,
   imagem: enroladinhoMignonImg,
   descricao: "Finíssimas fatias de filé mignon enroladas no parmesão",
 };
 
 const casal20 = {
+  id: 2,
   nome: "Casal 20",
-  preco: "R$ 29,00",
+  preco: 29.00,
   imagem: casal20Img,
   descricao: "Casal perfeito pão de alho caseiro e linguiça toscana grill",
 };
 
 const burguerPicanha = {
+  id: 3,
   nome: "Burguer de Picanha",
-  preco: "R$ 44,90",
+  preco: 44.90,
   imagem: burguerPicanhaImg,
   descricao:
     "Burguer de Picanha Angus, Queijo Cheddar, Crisp de Cebola e Geléia de Bacon",
 };
 
 const fishChips = {
+  id: 4,
   nome: "Fish and Chips",
-  preco: "R$ 79,90",
+  preco: 79.90,
   imagem: fishChipsImg,
   descricao:
     "Iscas de Peixe Empanada na Farinha Panko e Flocos de Milho e Batata Frita Palito",
 };
 
 const risotoCamaraoTrufado = {
+  id: 5,
   nome: "Risoto de Camarão Trufado",
-  preco: "R$ 72,90",
+  preco: 72.90,
   imagem: risotoCamaraoTrufadoImg,
   descricao:
     "Arroz Arbóreo, camarões salteados no azeite trufado e crocantes de panko",
 };
 
 const brownie = {
+  id: 6,
   nome: "Brownie",
-  preco: "R$ 32,90",
+  preco: 32.90,
   imagem: brownieImg,
   descricao:
     "Delicioso brownie caseiro, sorvete de creme, calda quente de chocolate",
 };
 
 const cocadaForno = {
+  id: 7,
   nome: "Cocada de Forno",
-  preco: "R$ 32,90",
+  preco: 32.90,
   imagem: cocadaFornoImg,
   descricao:
     "Cremosa cocada de coco torrado, doce de leite argentino e sorvete de creme",
 };
 
 const petitGateau = {
+  id: 8,
   nome: "Petit Gateau",
-  preco: "R$ 34,90",
+  preco: 34.90,
   imagem: petitGateauImg,
   descricao:
     "Bolo quente recheado com ganache de chocolate, leite condensado e castanha de caju",
 };
 
 const aguaSemGas = {
+  id: 9,
   nome: "Água sem gás",
-  preco: "R$ 6,90",
+  preco: 6.90,
   imagem: aguaSemGasImg,
   descricao: "310ml",
 };
 
 const aguaComGas = {
+  id: 10,
   nome: "Água com gás",
-  preco: "R$ 7,90",
+  preco: 7.90,
   imagem: aguaComGasImg,
   descricao: "310ml",
 };
 
 const cocaCola = {
+  id: 11,
   nome: "Coca-Cola",
-  preco: "R$ 7,90",
+  preco: 7.90,
   imagem: cocaColaImg,
   descricao: "290ml",
 };
 
 const guarana = {
+  id: 12,
   nome: "Guaraná Antártica",
-  preco: "R$ 7,90",
+  preco: 7.90,
   imagem: guaranaImg,
   descricao: "350ml",
 };
 
 const heineken = {
+  id: 13,
   nome: "Heineken",
-  preco: "R$ 15,90",
+  preco: 15.90,
   imagem: heinekenImg,
   descricao: "355ml",
 };
