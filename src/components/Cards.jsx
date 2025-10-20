@@ -6,9 +6,9 @@ const Cards = ({ categoriaSelecionada }) => {
   const pratos = itensCategorias[categoriaSelecionada];
   return (
     <div className="cards">
-      {pratos.map((prato, index) => (
+      {pratos.map((prato) => (
         <Card
-          key={index}
+          key={prato.id}
           titulo={prato.nome}
           descricao={prato.descricao}
           preco={prato.preco}

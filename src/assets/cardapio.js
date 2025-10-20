@@ -15,6 +15,7 @@ import guaranaImg from "./bebidas/guarana.jpeg";
 import heinekenImg from "./bebidas/heineken.jpeg";
 
 const enroladinhoMignon = {
+  id: 1,
   nome: "Enroladinho de Mignon",
   preco: 64.90,
   imagem: enroladinhoMignonImg,
@@ -22,6 +23,7 @@ const enroladinhoMignon = {
 };
 
 const casal20 = {
+  id: 2,
   nome: "Casal 20",
   preco: 29.00,
   imagem: casal20Img,
@@ -29,6 +31,7 @@ const casal20 = {
 };
 
 const burguerPicanha = {
+  id: 3,
   nome: "Burguer de Picanha",
   preco: 44.90,
   imagem: burguerPicanhaImg,
@@ -37,6 +40,7 @@ const burguerPicanha = {
 };
 
 const fishChips = {
+  id: 4,
   nome: "Fish and Chips",
   preco: 79.90,
   imagem: fishChipsImg,
@@ -45,6 +49,7 @@ const fishChips = {
 };
 
 const risotoCamaraoTrufado = {
+  id: 5,
   nome: "Risoto de Camarão Trufado",
   preco: 72.90,
   imagem: risotoCamaraoTrufadoImg,
@@ -53,6 +58,7 @@ const risotoCamaraoTrufado = {
 };
 
 const brownie = {
+  id: 6,
   nome: "Brownie",
   preco: 32.90,
   imagem: brownieImg,
@@ -61,6 +67,7 @@ const brownie = {
 };
 
 const cocadaForno = {
+  id: 7,
   nome: "Cocada de Forno",
   preco: 32.90,
   imagem: cocadaFornoImg,
@@ -69,6 +76,7 @@ const cocadaForno = {
 };
 
 const petitGateau = {
+  id: 8,
   nome: "Petit Gateau",
   preco: 34.90,
   imagem: petitGateauImg,
@@ -77,6 +85,7 @@ const petitGateau = {
 };
 
 const aguaSemGas = {
+  id: 9,
   nome: "Água sem gás",
   preco: 6.90,
   imagem: aguaSemGasImg,
@@ -84,6 +93,7 @@ const aguaSemGas = {
 };
 
 const aguaComGas = {
+  id: 10,
   nome: "Água com gás",
   preco: 7.90,
   imagem: aguaComGasImg,
@@ -91,6 +101,7 @@ const aguaComGas = {
 };
 
 const cocaCola = {
+  id: 11,
   nome: "Coca-Cola",
   preco: 7.90,
   imagem: cocaColaImg,
@@ -98,6 +109,7 @@ const cocaCola = {
 };
 
 const guarana = {
+  id: 12,
   nome: "Guaraná Antártica",
   preco: 7.90,
   imagem: guaranaImg,
@@ -105,6 +117,7 @@ const guarana = {
 };
 
 const heineken = {
+  id: 13,
   nome: "Heineken",
   preco: 15.90,
   imagem: heinekenImg,
