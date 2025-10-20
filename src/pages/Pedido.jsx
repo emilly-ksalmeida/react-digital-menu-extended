@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import Context from "../context/Context.js";
+import CardsPedidos from "./CardsPedidos.jsx";
 
 function Pedido() {
    const [itens, setItens] = useContext(Context);
@@ -21,7 +22,7 @@ function Pedido() {
         {itens.length == 0 ? (
           <p>Sacola vazia</p>
         ) : (
-          <p>Itens escolhidos</p>
+          <CardsPedidos />
         )}
       </div>
       </div>
