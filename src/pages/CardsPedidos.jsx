@@ -21,9 +21,9 @@ function CardsPedidos() {
 
   return (
     <div className="bg-nav p-4 rounded-md m-auto w-96 flex flex-col gap-5">
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-2">
         {itens.map((item) => (
-          <div className="bg-card-pedido">
+          <div className="bg-card-pedido rounded-md p-2">
             <h3>{item.produto}</h3>
             <p>Quantidade: {item.quantidade}</p>
             <p>Preço unitário: {formatarParaBRL(item.precoUnitario)}</p>
@@ -33,7 +33,7 @@ function CardsPedidos() {
           </div>
         ))}
       </div>
-      <div className="bg-amber-400">
+      <div className="bg-card-pedido rounded-md p-2 font-extrabold">
         <p>Total da compra: {totalDaCompra()}</p>
       </div>
     </div>
