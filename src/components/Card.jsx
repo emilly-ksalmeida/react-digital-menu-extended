@@ -27,27 +27,35 @@ const Card = (props) => {
   }
 
   return (
-    <div>
-      <div className="card">
-        <div className="card__textos">
-          <h2 className="card__titulo">{props.titulo}</h2>
+    <div className="bg-white rounded-md px-4 py-4 shadow-xl/20">
+      <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1.5 w-3xs h-40">
+          <h2 className="font-bold text-xl">{props.titulo}</h2>
           <p>{props.descricao}</p>
-          <p className="card__preco">{precoFormatado}</p>
+          <p >{precoFormatado}</p>
         </div>
-        <div className="card__img">
-          <img src={props.imagem} alt={props.descricao} />
+        <div className="w-3xs rounded-md object-cover object-center overflow-hidden">
+          <img className="object-center" src={props.imagem} alt={props.descricao} />
         </div>
         <div>
-          <form onSubmit={handleSubmit(adicionar)}>
-            <label>Quantidade: </label>
-            <input
-              {...register("qtde")}
-              type="number"
-              min="0"
-              max="10"
-              step="1"
-            />
-            <button type="submit">Adicionar</button>
+          <form 
+          className="flex flex-col items-start gap-3 py-2"
+          onSubmit={handleSubmit(adicionar)}>
+            <div>
+              <label>Quantidade: </label>
+              <input
+              className="w-24 rounded-md pl-2 bg-gray-100"
+                {...register("qtde")}
+                type="number"
+                min="0"
+                max="10"
+                step="1"
+              />
+            </div>
+            <button 
+            className="bg-add-pedido rounded-md w-24 p-1 cursor-pointer "
+            type="submit"
+            >Adicionar</button>
           </form>
         </div>
       </div>

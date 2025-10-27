@@ -4,8 +4,9 @@ import { pratosPrincipais, sobremesas, bebidas } from "../assets/cardapio.js";
 const Cards = ({ categoriaSelecionada }) => {
   const itensCategorias = [pratosPrincipais, sobremesas, bebidas];
   const pratos = itensCategorias[categoriaSelecionada];
+
   return (
-    <div className="cards">
+    <div className="w-screen flex flex-wrap gap-5">
       {pratos.map((prato) => (
         <Card
           key={prato.id}
