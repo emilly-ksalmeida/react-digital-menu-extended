@@ -20,11 +20,11 @@ function CardsPedidos() {
   };
 
   return (
-    <div className="bg-nav p-4 rounded-md m-auto w-96 flex flex-col gap-5">
-      <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5 bg-list p-4 rounded-md m-auto w-96 shadow-xl/20">
+      <div className="flex flex-col gap-2">
         {itens.map((item) => (
-          <div className="bg-card-pedido">
-            <h3>{item.produto}</h3>
+          <div className="flex flex-col gap-1 bg-card-pedido rounded-md p-3">
+            <h3 className="font-bold">{item.produto}</h3>
             <p>Quantidade: {item.quantidade}</p>
             <p>Preço unitário: {formatarParaBRL(item.precoUnitario)}</p>
             <p>
@@ -33,9 +33,9 @@ function CardsPedidos() {
           </div>
         ))}
       </div>
-      <div className="bg-amber-400">
-        <p>Total da compra: {totalDaCompra()}</p>
-      </div>
+      <p className="bg-card-pedido rounded-md p-2 font-extrabold">
+        Total da compra: {totalDaCompra()}
+      </p>
     </div>
   );
 }

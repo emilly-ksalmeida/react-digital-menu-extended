@@ -2,13 +2,13 @@ const Navegacao = ({ setCategoriaSelecionada, categoriaSelecionada }) => {
   const categoriasMenu = ["Pratos Principais", "Sobremesas", "Bebidas"];
   
   return (
-    <div className="rounded-md bg-nav flex flex-row gap-8 py-4 px-4 items-center justify-center">
+    <div className="rounded-md bg-nav min-w-[280px] flex flex-col sm:flex-row gap-0.5 p-2 items-center justify-evenly">
       {categoriasMenu.map((categoria, index) => (
         <p
           onClick={() => setCategoriaSelecionada(index)}
           key={index}
-          className={`w-1/3 rounded-md text-center
-            p-2 text-white cursor-pointer ${
+          className={`w-58 sm:w-80 rounded-md text-center
+            p-1 text-white font-semibold cursor-pointer ${
             index === categoriaSelecionada ? "bg-category-selec transition-colors duration-200 ease-in-out" : ""
           }`}
         >

@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 #root {
-  padding: 25px;
+  padding: 0.8rem;
   background-color: #e3d5b8;
   min-height: 100vh;
+  color: black
 }
 @theme {
   --color-cabecalho: #3B668C;
@@ -12,4 +13,5 @@
   --color-nav: #3973BF;
   --color-category-selec: #4E98D9;
   --color-card-pedido: #ffffff;
+  --color-list: #6195da;
 }
