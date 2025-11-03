@@ -27,24 +27,23 @@ const Card = (props) => {
   }
 
   return (
-    <div className="bg-white rounded-md px-4 py-4 shadow-xl/20">
-      <div className="flex flex-col gap-2">
+    <div className="bg-white flex flex-col items-center gap-2 rounded-md p-4 shadow-xl/20 max-w-xs">
+      
         <div className="flex flex-col gap-1.5 w-3xs h-40">
-          <h2 className="font-bold text-xl">{props.titulo}</h2>
+          <h2 className="font-extrabold text-xl">{props.titulo}</h2>
           <p>{props.descricao}</p>
-          <p >{precoFormatado}</p>
+          <p className="font-semibold">{precoFormatado}</p>
         </div>
         <div className="w-3xs rounded-md object-cover object-center overflow-hidden">
-          <img className="object-center" src={props.imagem} alt={props.descricao} />
+          <img src={props.imagem} alt={props.descricao} />
         </div>
-        <div>
           <form 
-          className="flex flex-col items-start gap-3 py-2"
+          className="flex flex-col items-start gap-3 w-3xs py-2"
           onSubmit={handleSubmit(adicionar)}>
             <div>
-              <label>Quantidade: </label>
+              <label className="font-bold">Quantidade: </label>
               <input
-              className="w-24 rounded-md pl-2 bg-gray-100"
+              className="w-24 rounded-md pl-2 bg-gray-200"
                 {...register("qtde")}
                 type="number"
                 min="0"
@@ -53,12 +52,10 @@ const Card = (props) => {
               />
             </div>
             <button 
-            className="bg-add-pedido rounded-md w-24 p-1 cursor-pointer "
+            className="bg-add-pedido text-white font-extrabold rounded-md w-24 p-1 cursor-pointer "
             type="submit"
             >Adicionar</button>
-          </form>
-        </div>
-      </div>
+          </form>     
     </div>
   );
 };

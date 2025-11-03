@@ -9,28 +9,27 @@ function Pedido() {
   const navigate = useNavigate();
     
   return (
-    <div className="flex flex-col gap-4 w-full m-auto bg-amber-50 p-4 rounded-md">
-      <div className="bg-cabecalho flex flex-row items-center justify-between px-8 py-6 rounded-md">
+    <div className="container flex flex-col gap-4 mx-auto bg-amber-50 p-4 rounded-md">
+      <div className="flex justify-between items-center w-full bg-cabecalho px-8 py-4 rounded-md">
         <button 
-        className="flex flex-row items-center gap-3 text-white bg-pedidos-button p-3 rounded-md cursor-pointer"
+        className="flex flex-col sm:flex-row items-center gap-3 bg-pedidos-button p-2 rounded-md cursor-pointer"
         onClick={() => navigate(-1)}>
-          <LuCircleChevronLeft />
-          Voltar
+          <LuCircleChevronLeft size={24} className="text-white"/>
+          <p className="text2xs text-white font-extrabold">Voltar</p>
         </button>
-        <h1 className="text-black font-bold text-3xl">Lista de Pedidos</h1>
+        <h1 className="text-white font-extrabold text-[1rem] sm:text-[1.5rem]">Lista de Pedidos</h1>
       </div>
-
       <div className="flex flex-col gap-5 py-2">
-       <p className="text-black font-bold text-xl">Veja seus itens selecionados:</p>
-       <div>
+       <p className="text-black font-bold text-xl">
+         Veja seus itens selecionados:
+       </p>
         {itens.length == 0 ? (
           <p>Sua lista de pedidos está vazia!</p>
         ) : (
           <CardsPedidos />
-        )}
+        )
+        }
       </div>
-      </div>
-      
     </div>
   );
 }

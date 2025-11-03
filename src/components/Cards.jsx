@@ -6,7 +6,7 @@ const Cards = ({ categoriaSelecionada }) => {
   const pratos = itensCategorias[categoriaSelecionada];
 
   return (
-    <div className="w-screen flex flex-wrap gap-5">
+    <div className="flex flex-row flex-wrap gap-5 w-full justify-center sm:justify-start">
       {pratos.map((prato) => (
         <Card
           key={prato.id}

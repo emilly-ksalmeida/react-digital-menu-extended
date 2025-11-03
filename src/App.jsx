@@ -10,21 +10,19 @@ function App() {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col gap-4 w-full m-auto bg-amber-50 p-4 rounded-md">
-      <div className="bg-cabecalho flex flex-row items-center justify-between px-8 py-6 rounded-md">
-        <h1 className="text-black font-bold text-3xl">Restaurante</h1>
-        <div>
-          <button
-            onClick={() => navigate("/pedido")}
-            className="flex flex-row items-center gap-3 bg-pedidos-button p-3 rounded-md text-white cursor-pointer"
-          >
-            <p>Veja seus pedidos</p>
-            <LuShoppingBasket />
-          </button>
-        </div>
+    <div className="container flex flex-col gap-4 mx-auto bg-amber-50 p-4 rounded-md">
+      <div className="flex justify-between items-center w-full bg-cabecalho px-6 py-4 rounded-md">
+        <h1 className="text-white font-extrabold text-[1rem] sm:text-[1.5rem]">Restaurante</h1>
+        <button
+          onClick={() => navigate("/pedido")}
+          className="flex flex-col sm:flex-row items-center gap-1 bg-pedidos-button p-2 rounded-md cursor-pointer"
+        >
+          <p className="text-xs text-white font-extrabold">Veja seus pedidos</p>
+          <LuShoppingBasket  className="text-white"/>
+        </button>
       </div>
-      <div className="h-64 rounded-md overflow-hidden">
-        <img className="w-full object-bottom" src={ImgRestaurante} alt="Imagem do Hashtaurante"/>
+      <div className="min-h-40 max-h-48 rounded-md overflow-hidden">
+        <img className="w-full object-center min-h-40" src={ImgRestaurante} alt="Imagem do Hashtaurante"/>
       </div>
 
       <Navegacao
