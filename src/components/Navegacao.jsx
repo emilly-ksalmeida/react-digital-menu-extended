@@ -2,7 +2,7 @@ const Navegacao = ({ setCategoriaSelecionada, categoriaSelecionada }) => {
   const categoriasMenu = ["Pratos Principais", "Sobremesas", "Bebidas"];
   
   return (
-    <div className="rounded-md bg-nav min-w-[280px] flex flex-col sm:flex-row gap-0.5 p-2 items-center justify-evenly">
+    <div className="rounded-md bg-nav min-w-[260px] flex flex-col sm:flex-row gap-0.5 p-2 items-center justify-evenly">
       {categoriasMenu.map((categoria, index) => (
         <p
           onClick={() => setCategoriaSelecionada(index)}

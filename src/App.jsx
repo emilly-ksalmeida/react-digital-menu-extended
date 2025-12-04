@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="container flex flex-col gap-4 mx-auto bg-amber-50 p-4 rounded-md">
-      <div className="flex justify-between items-center w-full bg-cabecalho px-6 py-4 rounded-md">
+      <div className="flex justify-between items-center w-full bg-cabecalho px-4 sm:px-6 py-4 rounded-md">
         <h1 className="text-white font-extrabold text-[1rem] sm:text-[1.5rem]">Restaurante</h1>
         <button
           onClick={() => navigate("/pedido")}
