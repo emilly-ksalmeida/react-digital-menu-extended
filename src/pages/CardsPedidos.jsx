@@ -20,7 +20,7 @@ function CardsPedidos() {
   };
 
   return (
-    <div className="flex flex-col gap-5 bg-list p-4 rounded-md m-auto w-96 shadow-xl/20">
+    <div className="flex flex-col gap-5 bg-list py-4 px-6 rounded-md m-auto sm:w-84 shadow-xl/20">
       <div className="flex flex-col gap-2">
         {itens.map((item) => (
           <div className="flex flex-col gap-1 bg-card-pedido rounded-md p-3">
